@@ -1,0 +1,180 @@
+/* =========================
+   GENERAL PAGE
+========================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+body > h2,
+body > ul,
+body > p {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+h2 {
+    margin-top: 35px;
+    font-size: 30px;
+    color: #2c3e50;
+}
+
+
+/* Dashboard cards */
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+li {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    font-size: 17px;
+    text-align: center;
+}
+
+li b {
+    display: block;
+    margin-top: 12px;
+    font-size: 28px;
+    color: #3498db;
+}
+
+
+/* =========================
+   LINKS / BUTTONS
+========================= */
+
+p a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+p a:hover {
+    background-color: #2980b9;
+}
+
+
+/* =========================
+   TABLES
+========================= */
+
+table {
+    width: calc(100% - 80px);
+    margin: 25px 40px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th {
+    background-color: #3498db;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+table td {
+    padding: 13px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Remove the old HTML border appearance */
+
+table,
+table th,
+table td {
+    border: none;
+}
+
+
+/* Table row hover */
+
+table tr:hover td {
+    background-color: #f5f9fc;
+}
+
+
+/* =========================
+   TABLE ACTION BUTTONS
+========================= */
+
+table td a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    padding: 7px 13px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+table td a:hover {
+    background-color: #2980b9;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 800px) {
+
+    ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    table {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    body > h2,
+    body > ul,
+    body > p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    ul {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+    }
+}
